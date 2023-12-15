@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="input_container">
+        <input type="text" readonly id="inputtext" />
+      </div>
+      <div class="button">
+        <button
+          onclick="displayItem+='1';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          1
+        </button>
+        <button
+          onclick="displayItem+='2';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          2
+        </button>
+        <button
+          onclick="displayItem+='3';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          3
+        </button>
+        <button
+          onclick="displayItem+='4';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          4
+        </button>
+        <br />
+        <button
+          onclick="displayItem+='5';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          5
+        </button>
+        <button
+          onclick="displayItem+='6';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          6
+        </button>
+        <button
+          onclick="displayItem+='7';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          7
+        </button>
+        <button
+          onclick="displayItem+='8';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          8
+        </button>
+        <br />
+        <button
+          onclick="displayItem+='9';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          9
+        </button>
+        <button
+          onclick="displayItem+='0';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          0
+        </button>
+
+        <button
+          onclick="
+let result = eval(displayItem)
+displayItem = result;
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          =
+        </button>
+        <button
+          onclick="displayItem='';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          C
+        </button>
+        <br />
+        <button
+          onclick="displayItem+= '+';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          +
+        </button>
+        <button
+          onclick="displayItem+= '-';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          -
+        </button>
+        <button
+          onclick="displayItem+='*';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          *
+        </button>
+        <button
+          onclick="displayItem+='/';
+document.querySelector('#inputtext').value=displayItem;"
+        >
+          /
+        </button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
